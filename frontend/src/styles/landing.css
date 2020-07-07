@@ -1,0 +1,339 @@
+* {
+  margin: 0rem;
+}
+
+body {
+  margin: 0rem;
+  padding: 0;
+  background-color: bisque;
+  overflow-x: hidden;
+}
+article {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.card {
+  flex-basis: auto;
+  align-self: auto;
+}
+#create {
+  width: 60%;
+  margin: 0 20%;
+  padding: 0 1rem 2rem 1rem;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0px 0px 80px -47px rgb(41, 41, 41);
+  /* box-shadow: 0 41.8px 33.4px rgba(0, 0, 0, 0.086);
+    padding-top: 1px; */
+  background-color: #2121217c;
+  height: max-content;
+  color: #212121;
+  border-radius: 10px;
+}
+
+#create.container {
+  background-color: #2b2b2b;
+}
+
+.row-cp {
+  background-color: #000000e8;
+  margin-top: 0;
+  height: 100vh;
+  max-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  top: 0;
+}
+.cp {
+  margin: 0;
+}
+
+.spinner-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.carousel {
+  padding: 2rem 0;
+  width: 90%;
+  margin-left: 5%;
+}
+
+#wrapper3-landing {
+  background: none;
+  display: flex;
+  justify-content: space-around;
+}
+#card-landing {
+  width: 30rem;
+  height: 30rem;
+  margin: 1rem;
+  border-radius: 20px;
+  padding: 0.5rem;
+  border: 2px solid black;
+  background: whitesmoke;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ease-out;
+  box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.932);
+}
+#card-landing:hover {
+  transform: translateY(20px);
+}
+#card-landing:hover:before {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+#card-landing:hover #info-landing {
+  opacity: 1;
+}
+
+#card-landing:before {
+  opacity: 1;
+}
+
+#card-landing:before {
+  content: "";
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: rgba(black, 0.6);
+}
+#card-landing img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: fill;
+
+  border-radius: 15px;
+}
+#card-landing #info-landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 101%;
+  height: 101%;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.959);
+  color: white;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s;
+  padding: 2rem;
+  object-fit: cover;
+  position: absolute;
+  transition: 0.5s;
+  border-radius: 15px;
+  margin-top: -1.3rem;
+  margin-left: -0.6rem;
+}
+
+#card-landing #info-landing p {
+  letter-spacing: 1px;
+  font-size: 18px;
+  margin-top: 30px;
+  display: flex;
+  justify-self: flex-end;
+}
+#card-landing #info-landing a {
+  padding: 0.6rem;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s ease;
+  margin-top: 50px;
+}
+#card-landing #info-landing a:hover {
+  background: crimson;
+  color: white;
+}
+
+.landing-page {
+  background: #0000007e;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  padding: 0;
+}
+
+#col-12 {
+  width: 100%;
+}
+
+.landing-heading {
+  width: 60%;
+  top: 50px;
+  margin-left: 20%;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-bottom: 5px solid crimson;
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+}
+.cp {
+  padding: 1rem;
+}
+
+.post-create-title {
+  width: 60%;
+  top: 50px;
+  margin-left: 20%;
+  padding: 1rem;
+  border-bottom: 5px solid crimson;
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown-menu button {
+  background-color: #212121;
+  color: white;
+  padding-left: 0.8rem;
+}
+
+.Ripple-parent {
+  background-color: #2e2e2e;
+}
+
+.ck-content {
+  color: black;
+}
+
+.waves-effect .Ripple-parent {
+  width: 200px;
+}
+
+label b {
+  color: whitesmoke;
+}
+
+#hash {
+  font-size: 35px;
+}
+/* #242526 */
+@media screen and (max-width: 1060px) {
+  .landing-heading {
+    width: 100%;
+    top: 50px;
+    margin-left: 0;
+    padding: 1rem;
+    border-bottom: 5px solid crimson;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+  }
+  .carousel {
+    padding: 2rem 0;
+    width: 90%;
+  }
+
+  .post-create-title {
+    width: 100%;
+    top: 50px;
+    margin-left: 0;
+    padding: 1rem;
+    border-bottom: 5px solid crimson;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+  }
+
+  #card-landing {
+    width: 21rem;
+    height: 30rem;
+    margin-right: 1rem;
+    border-radius: 20px;
+    padding: 0.5rem;
+    border: 2px solid black;
+    background: white;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.4s ease-out;
+    box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.932);
+  }
+
+  #card-landing img {
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  #wrapper3-landing {
+    background: none;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #card-landing #info-landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 103%;
+    height: 101%;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.959);
+    color: white;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s;
+    padding: 2rem;
+    object-fit: cover;
+    position: absolute;
+    transition: 0.5s;
+    border-radius: 15px;
+    margin-top: -1.3rem;
+    margin-left: -0.6rem;
+  }
+
+  #create {
+    width: 100%;
+    padding: 0 1rem 2rem 1rem;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+      0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+      0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    /* box-shadow: 0 41.8px 33.4px rgba(0, 0, 0, 0.086);
+      padding-top: 1px; */
+    background-color: whitesmoke;
+    height: max-content;
+  }
+
+  #create.container {
+    margin: 0;
+    padding: 0 1rem 2rem 1rem;
+    width: 100%;
+    margin: 0;
+    background-color: #212121;
+  }
+
+  .cp {
+    width: 100%;
+  }
+  .row-cp {
+    width: 100%;
+    margin: 0;
+  }
+}

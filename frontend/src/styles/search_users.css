@@ -1,0 +1,90 @@
+.user-search {
+  background-color: #080808cc;
+}
+.cont-div {
+  height: 100vh;
+}
+.bar-div {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.searchbar-div {
+  background-color: #212121;
+  color: whitesmoke;
+  padding: 0.5rem;
+  border-bottom: 5px solid crimson;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.search-results {
+  border-radius: 30px;
+}
+
+.folowers-div {
+  border: 1px solid whitesmoke;
+  width: 60%;
+  margin-left: 20%;
+  border-radius: 50px;
+  margin-top: 5px;
+}
+
+.folowers-div:hover {
+  background-color: crimson;
+  border: 2px dotted whitesmoke;
+  color: #212121;
+  width: 60%;
+  margin-left: 22%;
+  border-radius: 50px;
+  box-shadow: 0px 0px 5px -5px rgba(184, 184, 184, 1);
+}
+
+.followers-name-div h5 {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1060px) {
+  .folowers-div {
+    border: 1px solid whitesmoke;
+    width: 100%;
+    margin-left: 0;
+    border-radius: 50px;
+    margin-top: 5px;
+  }
+
+  .folowers-div:hover {
+    background-color: crimson;
+    border: 2px dotted whitesmoke;
+    color: #212121;
+    width: 100%;
+    margin-left: 0;
+    border-radius: 50px;
+    box-shadow: 0px 0px 5px -5px rgba(184, 184, 184, 1);
+  }
+
+  #nav-tabContent {
+    margin-left: 0;
+  }
+
+  .bar-div {
+    width: 100%;
+  }
+
+  .searchbar-div {
+    background-color: #212121;
+    color: whitesmoke;
+    padding: 0.5rem;
+    border-bottom: 5px solid crimson;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+  }
+}
