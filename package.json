@@ -10,7 +10,6 @@
     "client": "cd frontend && npm start",
     "install-client": "cd frontend && npm install",
     "heroku-postbuild": "npm run install-client && npm run build",
-    "postinstall": "ng build",
     "dev": "concurrently \"npm start\" \"npm run client\""
   },
   "author": "",
